@@ -19,7 +19,7 @@ const database = await getDatabase()
 const siteTitle = title ? `${title} - ${database.Title}` : database.Title
 const siteDescription = description ? description : database.Description
 const siteURL = new URL(path, Astro.site).toString()
-const siteOGImage = new URL('/default-og-image.png', Astro.site)
+const siteOGImage = new URL('/takkun-and-flower.jpeg', Astro.site)
 
 let coverImageURL: string
 if (database.Cover) {
